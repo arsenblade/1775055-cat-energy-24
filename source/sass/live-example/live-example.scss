@@ -1,0 +1,38 @@
+.live-example {
+  .live-example__title {
+    font-size: 36px;
+    line-height: 40px;
+    color: $hightlight-color;
+  }
+
+  .live-example__text {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .live-example__termin {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  .live-example__description {
+    font-size: 24px;
+    line-height: 24px;
+    color: $hightlight-color;
+  }
+
+  .live-example__expenses {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $hightlight-color;
+  }
+}

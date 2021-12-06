@@ -1,0 +1,48 @@
+.additional-goods {
+  .additional-goods__title {
+    font-size: 24px;
+    line-height: 24px;
+    color: $hightlight-color;
+  }
+}
+
+.goods {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .goods__title {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  .goods__termin {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .goods__discription {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.present {
+  background-color: rgb(80, 150, 10);
+  .present-text {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}

@@ -1,2 +1,14 @@
 // Начните писать стили здесь
-
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/font.scss";
+@import "./header/header.scss";
+@import "./selection-program/selection-program.scss";
+@import "./nutrition/nutrition.scss";
+@import "./advantages/advantages.scss";
+@import "./live-example/live-example.scss";
+@import "./our-contacts/our-contacts.scss";
+@import "./footer/footer.scss";
+@import "./catalog-products/catalog-products.scss";
+@import "./additional-goods/additional-goods.scss";
+@import "./form/form.scss";
