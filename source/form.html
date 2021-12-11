@@ -10,36 +10,38 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="#">
-      <img class="page-header-logo" src="img/logo-cat-energy.svg" alt="Логотип сайта.">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle">
-        <span class="visualy-hidden">
-          Открыть меню.
-        </span>
-      </button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item main-navigation__item--current">
-          <a href="index.html" class="main-navigation__link">
-            Главная
-          </a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="catalog.html" class="main-navigation__link">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="form.html" class="main-navigation__link">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__container">
+      <a class="header__logo" href="#">
+        <img class="page-header-logo" src="img/logo-cat-energy.svg" alt="Логотип сайта.">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle">
+          <span class="visually-hidden">
+            Открыть меню.
+          </span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a href="index.html" class="main-navigation__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="catalog.html" class="main-navigation__link">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="form.html" class="main-navigation__link">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="page-form">
-    <div class="page-form__container">
+  <main class="page-inner">
+    <div class="page-inner__container">
       <form class="form">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__text">Заполните анкету, и мы подберем
@@ -108,17 +110,17 @@
     <ul class="social">
       <li class="social__item">
         <a class="social__link" href="#">
-          <span class="visualy-hidden">Вконтакте.</span>
+          <span class="visually-hidden">Вконтакте.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="#">
-          <span class="visualy-hidden">Инстаграм.</span>
+          <span class="visually-hidden">Инстаграм.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="#">
-          <span class="visualy-hidden">Фейсбук.</span>
+          <span class="visually-hidden">Фейсбук.</span>
         </a>
       </li>
     </ul>
