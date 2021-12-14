@@ -1,16 +1,31 @@
-.our-contacts {
-  .our-contacts__title {
-    font-size: 16px;
-    line-height: 20px;
-    color: #111111;
-    text-transform: uppercase;
+.our-contacts__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
+}
 
-  .our-contacts__address {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+.our-contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.our-contacts__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
     line-height: 20px;
   }
 }

@@ -1,35 +1,107 @@
 .program {
   background: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 18px;
 
-  .program__title {
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $hightlight-color;
+  @media (min-width: $tablet-width) {
+    padding-left: 53px;
+    padding-bottom: 53px;
+    padding-right: 33px;
   }
 
-  .program__description {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+  @media (min-width: $desktop-width) {
+    width: 466px;
+    padding-left: 52px;
+    padding-bottom: 55px;
+    padding-right: 52px;
+  }
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: $hightlight-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 77px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
-  .program__link {
+  @media (min-width: $desktop-width) {
+    margin-top: 77px;
+    margin-bottom: 73px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 48px;
     font-size: 16px;
-    line-height: 16px;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    color: $hightlight-color;
-    background: url("../../img/right-arrow.svg") no-repeat 100px 7px;
-    text-decoration: none;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 50px;
-    font-stretch: ultra-condensed;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $hightlight-color;
+  background: url("../../img/right-arrow.svg") no-repeat 100px 7px;
+  text-decoration: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 50px;
+  font-stretch: ultra-condensed;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-position: 134px 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-position: 134px 13px;
+  }
+}
+
+.program--slimming {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }

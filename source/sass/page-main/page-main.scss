@@ -1,4 +1,13 @@
 .page-main__container {
   width: 87.5%;
   margin: 0 auto;
+  max-width: 1220px;
+
+  @media (min-width: $tablet-width) {
+    width: 92.2%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 84.7%;
+  }
 }
