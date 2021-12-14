@@ -1,0 +1,31 @@
+.advantages {
+  .advantages__title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: $hightlight-color;
+  }
+
+  .advantages__list {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  .advantages__description {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .advantages__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: $base-bg-color;
+  margin: 0;
+  padding: 0;
+  color: $base-font-color;
+  min-height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+}
