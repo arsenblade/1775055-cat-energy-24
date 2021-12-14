@@ -1,40 +1,14 @@
 .nutrition {
   display: flex;
   flex-direction: column;
-}
+  margin-bottom: 20px;
 
-.program {
-  background: #f2f2f2;
-
-  .program__title {
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $hightlight-color;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
   }
 
-  .program__description {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .program__link {
-    font-size: 16px;
-    line-height: 16px;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    color: $hightlight-color;
-    background: url("../../img/right-arrow.svg") no-repeat 100px 7px;
-    text-decoration: none;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 50px;
-    font-stretch: ultra-condensed;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-bottom: 70px;
   }
 }

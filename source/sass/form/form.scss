@@ -1,114 +1,34 @@
-.form {
-  .form__title {
-    font-size: 36px;
-    line-height: 36px;
-    color: $hightlight-color;
-  }
-
-  .form__text {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $hightlight-color;
-  }
-
-  .form_dispatch {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #68b738;
-    padding: 10px 58px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .form__clarification {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: $hightlight-color;
-  }
+.form__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $hightlight-color;
 }
 
-.stats {
-  .stats__label-text {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-
-  .stats__text {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $hightlight-color;
 }
 
-.selection {
-  .selection__label-radio {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #222222;
-  }
+.form__dispatch {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  padding: 10px 58px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.contact {
-  .contact__title {
-    font-size: 24px;
-    line-height: 26px;
-    color: $hightlight-color;
-  }
-
-  .contact__label-email {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-
-  .contact__label-phone {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-
-  .contact__email {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-}
-
-.comment {
-  .comment__title {
-    font-size: 24px;
-    line-height: 26px;
-    color: $hightlight-color;
-  }
-
-  .comment__text {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-}
-
-.additionally {
-  .additionally-title {
-    font-size: 24px;
-    line-height: 26px;
-    color: $hightlight-color;
-  }
-
-  .additionally__label-checkbox {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $hightlight-color;
-  }
+.form__clarification {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $hightlight-color;
 }

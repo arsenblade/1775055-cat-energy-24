@@ -1,13 +1,11 @@
-.comment {
-  .comment__title {
-    font-size: 24px;
-    line-height: 26px;
-    color: $hightlight-color;
-  }
+.comment__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: $hightlight-color;
+}
 
-  .comment__text {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.comment__text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }

@@ -1,38 +1,102 @@
 .live-example {
-  .live-example__title {
-    font-size: 36px;
-    line-height: 40px;
-    color: $hightlight-color;
+  background-color: #eaeaea;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding-top: 43px;
+  }
+}
+
+.live-example__title {
+  font-size: 32px;
+  line-height: 40px;
+  color: $hightlight-color;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 63px;
   }
 
-  .live-example__text {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
   }
+}
 
-  .live-example__termin {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-  }
+.live-example__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
 
-  .live-example__description {
-    font-size: 24px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
     line-height: 24px;
-    color: $hightlight-color;
+    margin-bottom: 54px;
   }
 
-  .live-example__expenses {
-    display: inline-block;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.live-example__list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.live-example__termin {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
     font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.live-example__description {
+  font-size: 24px;
+  line-height: 24px;
+  color: $hightlight-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.live-example__expenses {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $hightlight-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
     line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $hightlight-color;
+  }
+}
+
+.live-example__range-container {
+  font-size: 16px;
+  line-height: 20px;
+  color: $hightlight-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

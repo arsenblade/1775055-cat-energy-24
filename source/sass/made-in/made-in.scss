@@ -1,3 +1,14 @@
+.made-in {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: auto;
+    width: 162px;
+  }
+}
+
 .made-in__link {
   font-family: "Arial", sans-serif;
   font-style: normal;

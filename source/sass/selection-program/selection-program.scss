@@ -1,29 +1,105 @@
 .selection-program {
   position: relative;
   color: #ffffff;
-  background: url("../../img/index-bg-selection-pr-cat-.png") no-repeat;
-  height: 480px;
+  background: rgba(104, 183, 56, 0.85);
+  padding-top: 27px;
+  margin-bottom: 20px;
 
-  .selection-program__title {
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding-top: 62px;
+    padding-left: 12%;
   }
 
-  .selection-program__description {
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    background: none;
+    padding-top: 114px;
+    padding-left: 6.5%;
   }
+}
 
-  .selection-program__link {
-    font-size: 14px;
-    line-height: 18px;
+.selection-program__title {
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  font-stretch: ultra-condensed;
+  padding: 0 16px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: $hightlight-color;
+    padding: 0;
     display: inline-block;
-    padding: 7px 44px;
-    background-color: #68b738;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: $hightlight-color;
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+.selection-program__description {
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: uppercase;
+  display: block;
+  font-stretch: ultra-condensed;
+  text-align: center;
+  margin-bottom: 300px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    font-size: 18px;
+    line-height: 20px;
+    color: $hightlight-color;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
+    font-size: 18px;
+    line-height: 20px;
+    color: $hightlight-color;
+    text-align: start;
+    margin-bottom: 52px;
+  }
+}
+
+.selection-program__link {
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 7px 0;
+  width: 100%;
+  background-color: #68b738;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 26px;
+    margin-bottom: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 26px;
+    margin-bottom: 268px;
   }
 }
