@@ -5,6 +5,13 @@
 
   @media (min-width: $tablet-width) {
     border-top: 1px solid #cdcdcd;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    border-bottom: 1px solid #cdcdcd;
+    margin: 0;
   }
 }
 
@@ -16,12 +23,21 @@
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
     border: 1px solid #cdcdcd;
     border-top: none;
     margin: 0;
     padding-bottom: 28px;
     padding-right: 38px;
     padding-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 324px 1fr 244px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -32,30 +48,67 @@
   color: #222222;
   margin: 0;
   margin-bottom: 13px;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    margin-bottom: 27px;
+  }
 }
 
 .goods__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 29px;
+    grid-template-columns: 1fr 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 82px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
 }
 
 .goods__termin {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
   justify-self: start;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
 }
 
 .goods__discription {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
   justify-self: end;
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    margin: 0;
+  }
 }
 
 .goods__link--order {
@@ -68,4 +121,17 @@
   padding: 10px 0;
   text-align: center;
   text-decoration: none;
+  align-self: end;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+    margin-top: 15px;
+    margin-bottom: 17px;
+  }
 }

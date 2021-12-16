@@ -10,21 +10,23 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: "Oswaldmedium", sans-serif;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     margin-top: 32px;
+    font-family: "Oswaldregular", sans-serif;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     margin-top: 50px;
+    font-family: "Oswaldregular", sans-serif;
   }
 }
 
 .main-navigation__link {
   display: inline-block;
-  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: $hightlight-color;
@@ -34,7 +36,6 @@
   padding-bottom: 24px;
   text-align: center;
   width: 100%;
-  font-stretch: ultra-condensed;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -44,6 +45,7 @@
     padding-right: 15px;
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,6 +56,7 @@
     padding-right: 15px;
     font-size: 20px;
     line-height: 30px;
+    font-weight: normal;
   }
 }
 

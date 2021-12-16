@@ -11,19 +11,19 @@
 }
 
 .advantages__title {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 40px;
   color: $hightlight-color;
-  font-stretch: ultra-condensed;
   text-align: start;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
-    font-size: 54px;
+    font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 54px;
+    font-size: 60px;
     line-height: 60px;
   }
 }
