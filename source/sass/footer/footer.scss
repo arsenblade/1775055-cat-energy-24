@@ -7,18 +7,20 @@
   flex-direction: column;
   width: 87.5%;
   margin: 0 auto;
-  max-width: 1250px;
+  max-width: 330px;
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    width: 96%;
+    width: 92.2%;
     margin: 0 auto;
+    max-width: 810px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 87%;
+    width: 84.7%;
     margin: 0 auto;
+    max-width: 1220px;
   }
 }
 
