@@ -1,10 +1,18 @@
-.live-example {
+.live-example__container {
   background-color: #eaeaea;
+  padding: 0 20px;
   padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    padding: 0 30px;
     padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 

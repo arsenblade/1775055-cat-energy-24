@@ -1,10 +1,14 @@
 .made-in {
   display: flex;
   justify-content: space-between;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: flex;
     margin-left: auto;
+    margin-right: 30px;
+    align-items: center;
     width: 162px;
   }
 }
@@ -17,4 +21,5 @@
   line-height: 18px;
   text-decoration: none;
   color: $base-font-color;
+  align-self: center;
 }

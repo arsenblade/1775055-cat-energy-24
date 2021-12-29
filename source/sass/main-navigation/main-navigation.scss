@@ -1,27 +1,47 @@
 .main-navigation {
+  position: relative;
+
   @media (min-width: $tablet-width) {
+    position: static;
     margin-left: auto;
   }
 }
 
 .main-navigation__list {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   font-family: "Oswaldmedium", sans-serif;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
     flex-direction: row;
+    border: none;
     margin-top: 32px;
     font-family: "Oswaldregular", sans-serif;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     margin-top: 50px;
     font-family: "Oswaldregular", sans-serif;
+  }
+}
+
+.main-navigation__item {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
@@ -57,15 +77,66 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: normal;
+    color: #ffffff
   }
 }
 
 .main-navigation__toggle {
+  width: 70px;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: -65px;
+  right: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    display: none;
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 23px;
+    width: 24px;
+    height: 2px;
+    background-color: $hightlight-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-navigation--closed .main-navigation__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    width: 24px;
+    height: 2px;
+    background-color: $hightlight-color;
+    box-shadow: 0 8px 0 0 $hightlight-color, 0 16px 0 0 $hightlight-color;
   }
 }
