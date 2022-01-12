@@ -1,13 +1,17 @@
 .page-inner__container {
-  width: 87.5%;
-  margin: 0 auto;
-  max-width: 1220px;
-
-  @media (min-width: $tablet-width) {
-    width: 92.2%;
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 84.7;
+  &.page-inner__container--form {
+    @media (min-width: $tablet-width) {
+      width: 82%;
+      max-width: 810px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 84.7%;
+      max-width: 1220px;
+    }
   }
 }

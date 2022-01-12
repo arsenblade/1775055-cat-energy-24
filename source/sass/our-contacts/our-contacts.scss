@@ -1,4 +1,7 @@
 .our-contacts__container {
+  display: flex;
+  margin: 0 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -10,6 +13,7 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -28,4 +32,9 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.our-contacts__map {
+  display: block;
+  border: none;
 }

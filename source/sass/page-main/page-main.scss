@@ -1,13 +1,22 @@
-.page-main__container {
-  width: 87.5%;
-  margin: 0 auto;
-  max-width: 1220px;
-
-  @media (min-width: $tablet-width) {
-    width: 92.2%;
-  }
-
+.page-main {
   @media (min-width: $desktop-width) {
-    width: 84.7%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+      height: 694px;
+      background: rgba(104, 183, 56, 0.85);
+      z-index: -2;
+    }
+  }
+}
+
+.page-main__container {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
   }
 }

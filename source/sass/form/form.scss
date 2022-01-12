@@ -1,7 +1,41 @@
+.form {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
+
+.form__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 70px;
+  }
+}
+
 .form__title {
   font-size: 36px;
   line-height: 36px;
   color: $hightlight-color;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form__text {
@@ -9,26 +43,64 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $hightlight-color;
+  padding-right: 19%;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 48%;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 73%;
+  }
 }
 
 .form__dispatch {
+  font-family: "Oswaldregular", sans-serif;
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
-  padding: 10px 58px;
+  padding: 10px 0;
+  width: 100%;
   border: none;
   outline: none;
   cursor: pointer;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 13px 0;
+    margin: 0;
+    margin-right: 60px;
+    width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin: 0;
+    margin-right: 80px;
+  }
 }
 
 .form__clarification {
+  display: block;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
   color: $hightlight-color;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }

@@ -1,45 +1,88 @@
 .selection-program {
   position: relative;
   color: #ffffff;
-  background: rgba(104, 183, 56, 0.85);
-  padding-top: 27px;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 43px;
+    display: block;
+    width: 100%;
+    height: 270px;
+    background: url("../img/index-can-mobile.png") center no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 610px;
+      background: url("../img/index-can-tablet.png") center no-repeat;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      width: 710px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../img/index-can-desktop.png") center no-repeat;
+      height: 500px;
+      width: 550px;
+      bottom: 54px;
+      left: 448px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
     padding-top: 62px;
-    padding-left: 12%;
+    padding-left: 117px;
+    margin: 0;
+    padding-bottom: 528px;
   }
 
   @media (min-width: $desktop-width) {
     background: none;
     padding-top: 114px;
-    padding-left: 6.5%;
+    padding-left: 80px;
+    padding-bottom: 186px;
+    margin-bottom: 82px;
+  }
+}
+
+.selection-program__wrapper {
+  background: rgba(104, 183, 56, 0.85);
+  padding-top: 27px;
+  padding-bottom: 164px;
+  margin-bottom: 138px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding: 0;
+    margin-bottom: 50px;
   }
 }
 
 .selection-program__title {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 36px;
   text-align: center;
-  font-stretch: ultra-condensed;
-  padding: 0 16px;
+  padding: 0 15px;
   margin: 0;
   margin-bottom: 25px;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     width: 414px;
-    font-size: 54px;
+    font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
     color: $hightlight-color;
     padding: 0;
     display: inline-block;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     width: 414px;
-    font-size: 54px;
+    font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
     color: $hightlight-color;
@@ -49,50 +92,46 @@
 }
 
 .selection-program__description {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   display: block;
-  font-stretch: ultra-condensed;
   text-align: center;
-  margin-bottom: 300px;
 
   @media (min-width: $tablet-width) {
-    width: max-content;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
     color: $hightlight-color;
     text-align: start;
-    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: max-content;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
     color: $hightlight-color;
     text-align: start;
-    margin-bottom: 52px;
   }
 }
 
 .selection-program__link {
   font-size: 14px;
   line-height: 18px;
-  display: inline-block;
-  padding: 7px 0;
-  width: 100%;
+  display: block;
+  padding: 11px 0;
   background-color: #68b738;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: max-content;
     font-size: 18px;
     line-height: 20px;
     padding: 14px 26px;
-    margin-bottom: 630px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,6 +139,6 @@
     font-size: 18px;
     line-height: 20px;
     padding: 14px 26px;
-    margin-bottom: 268px;
+    margin: 0;
   }
 }

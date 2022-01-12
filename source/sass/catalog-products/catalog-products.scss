@@ -3,10 +3,17 @@
 }
 
 .catalog-products__title {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 36px;
-  font-stretch: ultra-condensed;
   color: $hightlight-color;
   margin: 0;
   margin-bottom: 40px;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 163px;
+    padding-left: 30px;
+  }
 }
