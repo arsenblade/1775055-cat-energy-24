@@ -10,6 +10,8 @@
     row-gap: 140px;
     column-gap: 60px;
     padding: 0 30px;
+    max-width: 820px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +19,7 @@
     row-gap: 140px;
     column-gap: 80px;
     padding: 0;
+    max-width: none;
   }
 }
 

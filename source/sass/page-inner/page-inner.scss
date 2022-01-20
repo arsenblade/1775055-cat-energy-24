@@ -3,16 +3,4 @@
     max-width: 1220px;
     margin: 0 auto;
   }
-
-  &.page-inner__container--form {
-    @media (min-width: $tablet-width) {
-      width: 82%;
-      max-width: 810px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 84.7%;
-      max-width: 1220px;
-    }
-  }
 }

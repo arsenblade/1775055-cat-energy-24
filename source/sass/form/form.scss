@@ -2,7 +2,9 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     padding-top: 64px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,7 +12,24 @@
   }
 }
 
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .form__container {
+  margin-bottom: 26px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -81,6 +100,7 @@
     margin: 0;
     margin-right: 60px;
     width: 282px;
+    margin-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
