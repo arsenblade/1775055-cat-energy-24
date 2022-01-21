@@ -57,6 +57,12 @@
   text-align: center;
   width: 100%;
 
+  &.main-navigation__link--index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
     padding-top: 10px;
@@ -77,7 +83,6 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: normal;
-    color: #ffffff
   }
 }
 

@@ -26,17 +26,17 @@
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
-            <a href="index.html" class="main-navigation__link">
+            <a class="main-navigation__link main-navigation__link--index" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-navigation__item">
-            <a href="catalog.html" class="main-navigation__link">
+            <a class="main-navigation__link main-navigation__link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-navigation__item">
-            <a href="form.html" class="main-navigation__link">
+            <a class="main-navigation__link main-navigation__link--index" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -196,14 +196,19 @@
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="live-example__list">
-          <dt class="live-example__termin">снижение веса</dt>
-          <dd class="live-example__description">5 КГ</dd>
-          <dt class="live-example__termin">затрачено времени</dt>
-          <dd class="live-example__description">60 ДНЕЙ</dd>
-        </dl>
+        <ul class="live-example__list">
+          <li class="live-example__item">
+            <span class="live-example__description">5 КГ</span>
+            <span class="live-example__termin">снижение веса</span>
+          </li>
+          <li class="live-example__item">
+            <span class="live-example__description">60 ДНЕЙ</span>
+            <span class="live-example__termin">затрачено времени</span>
+          </li>
+        </ul>
         <p class="live-example__expenses">
-          Затраты на питание: 15 000 РУБ.
+          <span class="live-example__text-expenses">Затраты на питание:</span>
+          <span class="live-example__price">15 000 РУБ.</span>
         </p>
         <div class="live-example__range-container">
           <span class=""></span>Было
@@ -216,9 +221,13 @@
         <div class="our-contacts__container">
           <h2 class="our-contacts__title">приглашаем к сотрудничеству дилеров!</h2>
           <address class="our-contacts__address">
-            ул. Большая
+            <span class="our-contacts__street">
+              ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург
+            </span>
+            <span class="our-contacts__town">
+              Санкт-Петербург
+            </span>
           </address>
         </div>
         <iframe class="our-contacts__map"
