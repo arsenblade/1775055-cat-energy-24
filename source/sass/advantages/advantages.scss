@@ -103,29 +103,57 @@
 
 .advantages__item--one {
   @media (min-width: $tablet-width) {
-    background: url("../img/background-advant-one.png") no-repeat;
+    background: url("../img/bg-advant-one.png") no-repeat;
     background-position: right 40px;
+    background-size: 70px 230px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-advant-one@2x.png") no-repeat;
+      background-size: 70px 230px;
+      background-position: right 40px;
+    }
   }
 }
 
 .advantages__item--two {
   @media (min-width: $tablet-width) {
-    background: url("../img/background-advant-two.png") no-repeat;
+    background: url("../img/bg-advant-two.png") no-repeat;
     background-position: right 40px;
+    background-size: 115px 230px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-advant-two@2x.png") no-repeat;
+      background-size: 115px 230px;
+      background-position: right 40px;
+    }
   }
 }
 
 .advantages__item--three {
   @media (min-width: $tablet-width) {
-    background: url("../img/background-advant-three.png") no-repeat;
+    background: url("../img/bg-advant-three.png") no-repeat;
     background-position: right 40px;
+    background-size: 112px 230px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-advant-three@2x.png") no-repeat;
+      background-size: 112px 230px;
+      background-position: right 40px;
+    }
   }
 }
 
 .advantages__item--four {
   @media (min-width: $tablet-width) {
-    background: url("../img/background-advant-four.png") no-repeat;
+    background: url("../img/bg-advant-four.png") no-repeat;
     background-position: right 40px;
+    background-size: 120px 230px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-advant-four@2x.png") no-repeat;
+      background-size: 120px 230px;
+      background-position: right 40px;
+    }
   }
 }
 

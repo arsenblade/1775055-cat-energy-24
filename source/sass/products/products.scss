@@ -76,9 +76,18 @@
   }
 }
 
-.products__img--1000 {
+.products__img--small {
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 172px;
+  }
+}
+
+.products__img--big {
   @media (min-width: $tablet-width) {
     margin-top: -73px;
+    width: 168px;
+    height: 200px;
   }
 }
 
