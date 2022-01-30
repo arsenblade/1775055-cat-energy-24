@@ -61,11 +61,12 @@
   line-height: 26px;
   color: $hightlight-color;
   width: 182px;
-  padding-right: 14px;
+  padding-right: 18px;
+  padding-left: 20px;
   background-color: #ffffff;
   font-weight: normal;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -80,6 +81,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 70px;
+    margin-bottom: 73px;
   }
 }
 
@@ -104,12 +106,30 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 12px 15px;
+  padding: 12px 13px;
   margin-left: 12px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 32px;
+    padding: 10px 19px;
+    height: 52px;
+    margin-left: 14px;
+  }
+}
+
+.contact__input--email {
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
   }
 }

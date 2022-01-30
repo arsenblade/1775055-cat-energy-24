@@ -2,6 +2,7 @@
   margin: 0;
   list-style: none;
   padding: 0 20px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -18,8 +19,8 @@
 .goods__item {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 13px;
-  margin-bottom: 20px;
+  padding-top: 12px;
+  margin-bottom: 19px;
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
@@ -27,7 +28,8 @@
     border: 1px solid #cdcdcd;
     border-top: none;
     margin: 0;
-    padding-bottom: 28px;
+    padding-top: 26px;
+    padding-bottom: 27px;
     padding-right: 38px;
     padding-left: 38px;
   }
@@ -45,11 +47,26 @@
   @media (min-width: $tablet-width) {
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .goods__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-bottom: 0;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -67,8 +84,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 26px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,6 +96,7 @@
 .goods__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
   margin-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -92,8 +109,9 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
-    margin-top: 29px;
+    column-gap: 4px;
     grid-template-columns: 1fr 90px;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,6 +153,19 @@
   text-align: center;
   text-decoration: none;
   align-self: end;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #68b738, inset 0 0 0 3px #ffffff;
+  }
+
+  &:active {
+    color: fade-out(#ffffff, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;

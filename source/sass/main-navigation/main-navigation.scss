@@ -28,11 +28,13 @@
     margin-top: 32px;
     font-family: "Oswaldregular", sans-serif;
     background-color: transparent;
+    column-gap: 6px;
   }
 
   @media (min-width: $desktop-width) {
+    column-gap: 0;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 60px;
     font-family: "Oswaldregular", sans-serif;
   }
 }
@@ -53,11 +55,31 @@
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   text-align: center;
   width: 100%;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #68b738;
+    box-sizing: border-box;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &.main-navigation__link--index {
+    &:focus-visible {
+      outline: none;
+      box-shadow: inset 0 0 0 2px #ffffff;
+      box-sizing: border-box;
+    }
+
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }
@@ -78,8 +100,8 @@
     width: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
     font-size: 20px;
     line-height: 30px;
     font-weight: normal;
