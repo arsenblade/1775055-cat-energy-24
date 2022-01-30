@@ -14,9 +14,16 @@
 }
 
 .page-main__container {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 74px;
   }
 }

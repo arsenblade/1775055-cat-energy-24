@@ -9,6 +9,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-left: 20px;
   }
 }
 
@@ -16,25 +17,74 @@
   padding: 15px;
   text-decoration: none;
   display: block;
+
+  &:hover .social__icon {
+    fill: #68b738;
+  }
+
+  &:hover .social__icon--facebook {
+    fill: none;
+    stroke: #68b738;
+  }
+
+  &:focus .social__icon {
+    fill: #68b738;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .social__icon--facebook {
+    fill: none;
+    stroke: #68b738;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social__link--vk {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 12px;
+    padding-right: 15px;
+  }
 }
 
 .social__link--inst {
   padding-top: 24px;
   padding-bottom: 23px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
 }
 
 .social__link--facebook {
   padding-top: 20px;
   padding-bottom: 23px;
+  padding-left: 18px;
+  padding-right: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+    padding-right: 20px;
+  }
 }
 
 .social__icon {
   display: block;
+  fill: #666666;
 }
 
 .social__icon--vk {
@@ -50,7 +100,10 @@
 }
 
 .social__icon--facebook {
+  fill: none;
+  stroke: #666666;
+
   @media (min-width: $tablet-width) {
-    transform: scaleY(1.35);
+    transform: scaleX(1.3) scaleY(1.5);
   }
 }

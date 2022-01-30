@@ -1,5 +1,15 @@
 .header {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .header__container {
@@ -30,8 +40,29 @@
   display: block;
   height: 65px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #68b738;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  &:active {
+    opacity: 0.6;
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 60px;
+    margin-top: 53px;
+    margin-left: 15px;
   }
 }
 
@@ -50,6 +81,6 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    margin-top: 53px;
+    margin: 0;
   }
 }

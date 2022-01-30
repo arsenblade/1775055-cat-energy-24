@@ -6,7 +6,7 @@
       content: "";
       background-color: #eaeaea;
       width: 100%;
-      height: 45%;
+      height: 43%;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -14,8 +14,16 @@
 
     @media (min-width: $desktop-width) {
       background-color: #f2f2f2;
-      height: 72%;
+      height: 77%;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
   }
 }
 
@@ -24,13 +32,13 @@
   padding: 0 20px;
   padding-top: 25px;
   position: relative;
-  padding-bottom: 360px;
+  padding-bottom: 358px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
     padding: 0 30px;
     padding-top: 43px;
-    padding-bottom: 700px;
+    padding-bottom: 728px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,8 +46,8 @@
     max-width: 1220px;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 75px;
-    padding-right: 780px;
+    padding-bottom: 74px;
+    padding-right: 786px;
     box-sizing: border-box;
   }
 }
@@ -70,7 +78,7 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -86,19 +94,19 @@
 .live-example__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   column-gap: 32px;
   justify-content: center;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    column-gap: 32px;
+    column-gap: 42px;
     justify-content: start;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 }
 
@@ -117,7 +125,7 @@
   text-align: center;
   padding-left: 9px;
   padding-right: 9px;
-  margin: -10px;
+  margin-top: -10px;
   background-color: #eaeaea;
   margin-left: auto;
   margin-right: auto;
@@ -128,11 +136,13 @@
     width: 128px;
     padding-left: 7px;
     padding-right: 7px;
+    margin-top: -6px;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     background: #f2f2f2;
+    margin-top: -8px;
   }
 }
 
@@ -154,7 +164,7 @@
     font-size: 30px;
     line-height: 37px;
     width: 160px;
-    padding-top: 17.5px;
+    padding-top: 13px;
     padding-bottom: 17.5px;
   }
 }
@@ -172,7 +182,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: end;
-    margin-top: -88px;
+    margin-top: -86px;
     display: flex;
     flex-direction: column;
     row-gap: 9px;
@@ -189,26 +199,26 @@
 
 .live-example__imgs-wrapper {
   position: absolute;
-  width: 280px;
+  width: 310px;
   min-height: 280px;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: 40px;
+  bottom: 46px;
 
 
   @media (min-width: $tablet-width) {
     min-height: 580px;
-    width: 590px;
-    bottom: 60px;
+    width: 660px;
+    bottom: 50px;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-45%, 0);
   }
 
   @media (min-width: $desktop-width) {
     left: auto;
     bottom: auto;
-    top: -40px;
-    right: 0;
+    top: -42px;
+    right: -68px;
     transform: none;
   }
 }
@@ -219,7 +229,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    width: 47%;
+    width: 45%;
   }
 }
 
@@ -232,19 +242,19 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 53%;
+    width: 55%;
   }
 }
 
 .live-example__img-fat {
   @media (min-width: $tablet-width) {
-    width: 600px;
-    height: 510px;
+    width: 660px;
+    height: 496px;
   }
 }
 
 .live-example__img-skinny {
-  margin-right: 20px;
+  margin-right: 64px;
 
   @media (min-width: $tablet-width) {
     width: 545px;
@@ -259,7 +269,7 @@
   position: absolute;
   text-transform: uppercase;
   bottom: 0;
-  width: 172px;
+  width: 200px;
   left: 50%;
   transform: translate(-50%, 0);
 
@@ -268,6 +278,8 @@
     line-height: 30px;
     bottom: 10px;
     width: 100%;
+    padding-left: 14px;
+    box-sizing: border-box;
   }
 }
 
@@ -279,13 +291,15 @@
   height: 12px;
   border: 1px solid #cdcdcd;
   background: #ffffff;
+  margin-left: 14px;
+  margin-right: 14px;
 
   @media (min-width: $tablet-width) {
     width: 426px;
     height: 6px;
     background: #dcdcdc;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 18px;
+    margin-left: 18px;
     margin-bottom: 5px;
   }
 }
@@ -299,6 +313,15 @@
   left: 5px;
   border: none;
   background: #68b738;
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px #cdcdcd;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px #68b738;
+  }
+
 
   @media (min-width: $tablet-width) {
     width: 34px;

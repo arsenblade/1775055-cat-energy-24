@@ -1,5 +1,5 @@
 .additionally {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   position: relative;
 
   &::before {
@@ -36,7 +36,7 @@
 .additionally__container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 25px;
+  row-gap: 24px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -45,11 +45,12 @@
     row-gap: 42px;
     padding-left: 70px;
     padding-right: 70px;
+    column-gap: 58px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
+    column-gap: 80px;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -84,12 +85,17 @@
 .additionally__checkbox:checked + .additionally__mark::before {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 13px;
-  background: #68b738;
-  top: 50%;
+  width: 26px;
+  height: 26px;
+  background: url("../img/check-mark-mobile.svg") center no-repeat;
   left: 50%;
+  top: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/check-mark-tablet.svg") center no-repeat;
+  }
 }
 
 .additionally__control {
@@ -99,6 +105,11 @@
   text-transform: uppercase;
   color: #222222;
   padding-left: 45px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -118,8 +129,16 @@
   left: 0;
   transform: translate(0, -50%);
 
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
+}
+
+.additionally__checkbox:focus-visible + .additionally__mark {
+  border: 1px solid #68b738;
 }

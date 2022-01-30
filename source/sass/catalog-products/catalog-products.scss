@@ -2,11 +2,13 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 66px;
     max-width: 820px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 75px;
     max-width: none;
     margin: 0;
   }
@@ -19,15 +21,17 @@
   margin: 0;
   margin-bottom: 40px;
   font-weight: normal;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 163px;
-    padding-left: 30px;
+    margin-bottom: 164px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 165px;
   }
 }
