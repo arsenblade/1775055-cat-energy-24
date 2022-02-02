@@ -9,13 +9,13 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    background: url("../img/index-bg-cat.png") no-repeat;
+    background: rgba(104, 183, 56) url("../img/index-bg-cat.png") no-repeat;
     width: 320px;
     height: 302px;
     z-index: -3;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/index-bg-cat@2x.png") no-repeat;
+      background: rgba(104, 183, 56) url("../img/index-bg-cat@2x.png") no-repeat;
       background-size: 320px 302px;
     }
 
@@ -26,15 +26,15 @@
     @media (min-width: $desktop-width) {
       width: 720px;
       height: 694px;
-      background: url("../img/index-bg-cat-desktop.png") no-repeat;
+      background: rgba(104, 183, 56) url("../img/index-bg-cat-desktop.png") no-repeat;
       background-size: 720px 694px;
-      top: -112px;
+      top: -113px;
       left: 50%;
       z-index: -3;
       transform: none;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/index-bg-cat-desktop@2x.png") no-repeat;
+        background: rgba(104, 183, 56) url("../img/index-bg-cat-desktop@2x.png") no-repeat;
         background-size: 720px 694px;
       }
     }
@@ -96,7 +96,7 @@
     background: none;
     padding-top: 110px;
     padding-left: 80px;
-    padding-bottom: 186px;
+    padding-bottom: 187px;
     margin-bottom: 82px;
   }
 }
@@ -111,6 +111,10 @@
     background: none;
     padding: 0;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
   }
 }
 
@@ -208,7 +212,7 @@
     width: max-content;
     font-size: 20px;
     line-height: 20px;
-    padding: 18px 26px;
+    padding: 17px 26px;
     margin: 0;
   }
 }
