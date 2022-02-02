@@ -55,6 +55,11 @@
 
   &:focus {
     border: 2px solid #444444;
+    padding: 11px 13px;
+
+    @media (min-width: $tablet-width) {
+      padding: 11px 17px;
+    }
   }
 
   @media (min-width: $tablet-width) {

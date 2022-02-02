@@ -93,6 +93,11 @@
   &:focus {
     outline: none;
     border: 2px solid #444444;
+    padding: 7px 12px;
+
+    @media (min-width: $tablet-width) {
+      padding: 8px 17px;
+    }
   }
 
   @media (min-width: $tablet-width) {

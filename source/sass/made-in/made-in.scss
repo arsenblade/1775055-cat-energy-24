@@ -3,6 +3,14 @@
   justify-content: space-between;
   padding-top: 22px;
 
+  &:hover .made-in__link-icon {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
@@ -27,3 +35,8 @@
   color: $base-font-color;
   align-self: center;
 }
+
+.made-in__link-icon {
+  fill: #666;
+}
+
