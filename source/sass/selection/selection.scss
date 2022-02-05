@@ -20,7 +20,7 @@
   }
 }
 
-.selection__radio:checked + .selection__mark::before {
+.selection__radio:checked + .selection__mark-container .selection__mark::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -45,10 +45,6 @@
   color: #222222;
   padding-left: 45px;
   cursor: pointer;
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -79,6 +75,10 @@
   }
 }
 
-.selection__radio:focus-visible + .selection__mark {
+.selection__radio:focus-visible + .selection__mark-container .selection__mark {
   border: 1px solid #68b738;
+}
+
+.selection__radio:disabled + .selection__mark-container {
+  opacity: 0.3;
 }

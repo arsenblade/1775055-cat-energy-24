@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/fave-icon16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/fave-icon32x32.png">
   <link rel="icon" type="image/png" sizes="152x152" href="img/fave-icon152x152.png">
+  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -29,7 +31,7 @@
           </span>
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current">
+          <li class="main-navigation__item">
             <a href="index.html" class="main-navigation__link">
               Главная
             </a>
@@ -39,7 +41,7 @@
               Каталог продукции
             </a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item  main-navigation__item--current">
             <a href="form.html" class="main-navigation__link">
               Подбор программы
             </a>
@@ -72,18 +74,24 @@
           <div class="selection">
               <label class="selection__control">
                 <input class="selection__radio visually-hidden" type="radio" name="program">
-                <span class="selection__mark"></span>
-                похудение
+                <span class="selection__mark-container">
+                  <span class="selection__mark"></span>
+                  похудение
+                </span>
               </label>
               <label class="selection__control">
                 <input class="selection__radio visually-hidden" type="radio" name="program">
-                <span class="selection__mark"></span>
-                Набор&nbsp;массы
+                <span class="selection__mark-container">
+                  <span class="selection__mark"></span>
+                  Набор&nbsp;массы
+                </span>
               </label>
               <label class="selection__control">
                 <input class="selection__radio visually-hidden" type="radio" name="program">
-                <span class="selection__mark"></span>
-                Не&nbsp;знаю&nbsp;(Нужен&nbsp;ваш&nbsp;совет)
+                <span class="selection__mark-container">
+                  <span class="selection__mark"></span>
+                  Не&nbsp;знаю&nbsp;(Нужен&nbsp;ваш&nbsp;совет)
+                </span>
               </label>
           </div>
         </div>
@@ -107,7 +115,7 @@
             </label>
             <label class="contact__label" for="phone">
               Телефон:*
-              <input class="contact__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+              <input class="contact__input" type="number" id="phone" placeholder="8 (960) 900-60-90">
               <svg class="contact__icon contact__icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_2403_1829)">
                 <path d="M17.9 9.4H9.40002V10.6H17.9L15.8 12.7L16.7 13.6L19.8 10.5C19.8974 10.3702 19.95 10.2123 19.95 10.05C19.95 9.88772 19.8974 9.72982 19.8 9.6L16.7 6.5L15.8 7.4L17.9 9.4Z"/>
@@ -137,25 +145,31 @@
           <div class="additionally__container">
             <label class="additionally__control">
               <input class="additionally__checkbox visually-hidden" type="checkbox" name="add-checkbox">
-              <span class="additionally__mark"></span>
-              сахарозаменитель
-            </label>
-            <label class="additionally__control">
-              <input class="additionally__checkbox visually-hidden" type="checkbox" name="add-checkbox">
-              <span class="additionally__mark">
-
+              <span class="additionally__mark-container">
+                <span class="additionally__mark"></span>
+                сахарозаменитель
               </span>
-              питьевая вода
             </label>
             <label class="additionally__control">
               <input class="additionally__checkbox visually-hidden" type="checkbox" name="add-checkbox">
-              <span class="additionally__mark"></span>
-              молоко
+              <span class="additionally__mark-container">
+                <span class="additionally__mark"></span>
+                питьевая вода
+              </span>
             </label>
             <label class="additionally__control">
               <input class="additionally__checkbox visually-hidden" type="checkbox" name="add-checkbox">
-              <span class="additionally__mark"></span>
-              витамины
+              <span class="additionally__mark-container">
+                <span class="additionally__mark"></span>
+                молоко
+              </span>
+            </label>
+            <label class="additionally__control">
+              <input class="additionally__checkbox visually-hidden" type="checkbox" name="add-checkbox">
+              <span class="additionally__mark-container">
+                <span class="additionally__mark"></span>
+                витамины
+              </span>
             </label>
           </div>
         </div>
@@ -184,7 +198,7 @@
       </div>
       <iframe class="our-contacts__map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-      width="100%"
+      width="300"
       height="362"
       allowfullscreen
       title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
