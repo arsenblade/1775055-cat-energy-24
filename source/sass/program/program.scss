@@ -116,42 +116,65 @@
 }
 
 .program__link--slimming {
-  background: url("../img/right-arrow.svg") no-repeat 100px 20px;
+  background: url("../img/right-arrow.svg") no-repeat;
+  background-position: center;
+  background-position-x: 100px;
+  padding-right: 40px;
+  box-sizing: border-box;
 
   &:hover {
-    background: url("../img/right-arrow-hover.svg") no-repeat 100px 20px;
+    background: url("../img/right-arrow-hover.svg") no-repeat;
+    background-position: center;
+    background-position-x: 100px;
 
     @media (min-width: $tablet-width) {
-      background: url("../img/right-arrow-hover.svg") no-repeat 136px 25px;
+      background: url("../img/right-arrow-hover.svg") no-repeat;
+      background-position: center;
+      background-position-x: 136px;
     }
 
     @media (min-width: $desktop-width) {
-      background: url("../img/right-arrow-hover.svg") no-repeat 140px 25px;
+      background: url("../img/right-arrow-hover.svg") no-repeat;
+      background-position: center;
+      background-position-x: 140px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 136px 25px;
+    background-position: center;
+    background-position-x: 136px;
+    padding-right: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 140px 25px;
+    background-position: center;
+    background-position-x: 140px;
   }
 }
 
 .program__link--weight-gain {
-  background: url("../img/right-arrow.svg") no-repeat 100px 20px;
+  background: url("../img/right-arrow.svg") no-repeat;
+  background-position: center;
+  background-position-x: 100px;
+  padding-right: 40px;
+  box-sizing: border-box;
 
   &:hover {
-    background: url("../img/right-arrow-hover.svg") no-repeat 100px 20px;
+    background: url("../img/right-arrow-hover.svg") no-repeat;
+    background-position: center;
+    background-position-x: 100px;
 
     @media (min-width: $tablet-width) {
-      background: url("../img/right-arrow-hover.svg") no-repeat 134px 25px;
+      background: url("../img/right-arrow-hover.svg") no-repeat;
+      background-position: center;
+      background-position-x: 134px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 134px 25px;
+    background-position: center;
+    background-position-x: 134px;
+    padding-right: 70px;
   }
 }
 

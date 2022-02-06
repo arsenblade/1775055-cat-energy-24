@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/fave-icon16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/fave-icon32x32.png">
   <link rel="icon" type="image/png" sizes="152x152" href="img/fave-icon152x152.png">
+  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -29,7 +31,7 @@
           </span>
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current">
+          <li class="main-navigation__item main-navigation__item--current-index">
             <a class="main-navigation__link main-navigation__link--index" href="index.html">
               Главная
             </a>
@@ -104,7 +106,7 @@
                     fill="#fff" />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="a-leaf">
                     <path fill="#fff" d="M0 0h30v32H0z" />
                   </clipPath>
                 </defs>
@@ -133,7 +135,7 @@
                     mask="url(#b)" />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="a-tub">
                     <path fill="#fff" d="M0 0h29v31H0z" />
                   </clipPath>
                 </defs>
@@ -165,7 +167,7 @@
                 <circle cx="7.07" cy="17.77" fill="#fff" r="1.09" />
                 <circle cx="24.47" cy="17.77" fill="#fff" r="1.09" />
                 <circle cx="21.2" cy="24.35" fill="#fff" r="1.09" />
-                <mask id="a" fill="#fff">
+                <mask id="a-alarm" fill="#fff">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M20.92 29.06c.41-.2.9-.13 1.22.2l1.82 1.87a.68.68 0 0 0 .98-.95l-1.36-1.4c-.42-.43-.36-1.14.1-1.55A12.75 12.75 0 0 0 28 17.61C28 10.65 22.52 5 15.77 5 9 5 3.54 10.65 3.54 17.61c0 3.82 1.64 7.24 4.23 9.55.45.4.51 1.11.1 1.55l-1.44 1.47a.68.68 0 1 0 .97.95l1.88-1.93c.32-.33.82-.4 1.23-.2a11.88 11.88 0 0 0 10.41.06Zm-5.15-.23c6 0 10.87-5.02 10.87-11.22 0-6.19-4.87-11.2-10.87-11.2-6 0-10.88 5.01-10.88 11.2 0 6.2 4.87 11.22 10.88 11.22ZM15 17.3V9.94a.78.78 0 1 1 1.56 0v8.18a.8.8 0 0 1-.8.8.76.76 0 0 1-.76-.75V17.3Z" />
                 </mask>
@@ -227,7 +229,7 @@
         </div>
       </div>
     </section>
-      <section class="our-contacts">
+    <section class="our-contacts">
         <div class="our-contacts__wrapper">
           <div class="our-contacts__container">
             <h2 class="our-contacts__title">приглашаем
@@ -246,12 +248,11 @@
         </div>
         <iframe class="our-contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-        width="100%"
+        width="300"
         height="362"
         allowfullscreen
         title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-      </section>
-    </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__container">

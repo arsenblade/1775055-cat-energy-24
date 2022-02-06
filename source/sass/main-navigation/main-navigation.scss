@@ -4,6 +4,11 @@
   @media (min-width: $tablet-width) {
     position: static;
     margin-left: auto;
+    max-width: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
   }
 }
 
@@ -29,6 +34,7 @@
     font-family: "Oswaldregular", sans-serif;
     background-color: transparent;
     column-gap: 6px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +50,55 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+.main-navigation__item--current {
+  .main-navigation__link {
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: calc(100% - 32px);
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #68b738;
+      }
+    }
+  }
+}
+
+.main-navigation__item--current-index {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: calc(100% - 32px);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: #68b738;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: calc(100% - 32px);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -166,4 +221,8 @@
     background-color: $hightlight-color;
     box-shadow: 0 8px 0 0 $hightlight-color, 0 16px 0 0 $hightlight-color;
   }
+}
+
+.main-navigation--nojs .main-navigation__list {
+  display: flex;
 }

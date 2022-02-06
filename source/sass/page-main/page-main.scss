@@ -1,4 +1,41 @@
 .page-main {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(104, 183, 56) url("../img/index-bg-cat.png") no-repeat;
+    width: 320px;
+    height: 302px;
+    z-index: -3;
+
+    @media (min-resolution: 2dppx) {
+      background: rgba(104, 183, 56) url("../img/index-bg-cat@2x.png") no-repeat;
+      background-size: 320px 302px;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 720px;
+      height: 694px;
+      background: rgba(104, 183, 56) url("../img/index-bg-cat-desktop.png") no-repeat;
+      background-size: 720px 694px;
+      top: 0;
+      left: 50%;
+      z-index: -3;
+      transform: none;
+
+      @media (min-resolution: 2dppx) {
+        background: rgba(104, 183, 56) url("../img/index-bg-cat-desktop@2x.png") no-repeat;
+        background-size: 720px 694px;
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
